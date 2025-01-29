@@ -1,2 +1,3 @@
 # thesoulcaptivators
-It is a Website designed by Rahul Karra for Christian musical band to attract people with christian songs and encourage poeple
+The Soul Captivators Website designed by Rahul Karra.
+This is for Christian Musical Band to post their songs,updates etc and  Attract people. 

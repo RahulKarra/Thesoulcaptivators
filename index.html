@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Soul Captivators
+  </title>
+  <script src="https://cdn.tailwindcss.com"> </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,500&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&family=Raleway:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+ </head>
+
+      <body class="bg-white text-gray-900">
+    
+  <!-- Navbar -->
+  <header class="fixed w-full bg-white shadow-md z-50">
+   <div class="container mx-auto flex items-center justify-between p-4">
+    <a class="flex items-center text-xl font-semibold text-gray-900" href="#">
+     <img alt="Logo of The Soul Captivators" class="h-12 w-12 rounded-full mr-2" src="images/thesoulcaptivators.jpg"/>
+     The Soul Captivators
+    </a>
+    <div class="md:hidden">
+      <button class="text-2xl" id="menu-icon">   
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <nav class="hidden md:flex space-x-4">
+     <a class="py-2 px-4 text-gray-900 hover:bg-gray-800 hover:text-white rounded" href="#home">
+      Home
+     </a>
+     <a class="py-2 px-4 text-gray-900 hover:bg-gray-800 hover:text-white rounded" href="#description">
+      Description
+     </a>
+     <a class="py-2 px-4 text-gray-900 hover:bg-gray-800 hover:text-white rounded" href="#videos">
+      Videos
+     </a>
+     <a class="py-2 px-4 text-gray-900 hover:bg-gray-800 hover:text-white rounded" href="#lifestyle">
+      Lifestyle
+     </a>
+     <a class="py-2 px-4 text-gray-900 hover:bg-gray-800 hover:text-white rounded" href="#sponsorship">
+      Sponsorship
+     </a>
+    </nav>
+    <!-- <button class="text-2xl" id="dark-mode-toggle">
+     <i class="fas fa-moon">
+     </i>
+    </button> -->
+   </div>
+   <nav class="navbar hidden md:hidden">
+    <a class="py-2 px-4 text-gray-900 hover:bg-gray-800 hover:text-white rounded" href="#home">
+     Home
+    </a>
+    <a class="py-2 px-4 text-gray-900 hover:bg-gray-800 hover:text-white rounded" href="#description">
+     Description
+    </a>
+    <a class="py-2 px-4 text-gray-900 hover:bg-gray-800 hover:text-white rounded" href="#videos">
+     Videos
+    </a>
+    <a class="py-2 px-4 text-gray-900 hover:bg-gray-800 hover:text-white rounded" href="#lifestyle">
+     Lifestyle
+    </a>
+    <a class="py-2 px-4 text-gray-900 hover:bg-gray-800 hover:text-white rounded" href="#sponsorship">
+     Sponsorship
+    </a>
+   </nav>
+  </header>
+  
+  <!-- Home -->
+  <section class="relative h-screen flex items-center justify-center bg-cover bg-center" id="home" style="background-image: url('images/HeaderPage.jpg');">
+   <div class="absolute inset-0 bg-black opacity-50">
+   </div>
+   <div class="relative z-10 text-center text-white">
+    <span class="fade-in gradient-text block text-2xl">  <!-- Fade-in n gradient-text is used for text effects-->
+     The Soul Captivators
+    </span>
+    <h1 class="fade-in gradient-text text-4xl md:text-7xl font-bold">
+     Where we create Music
+     <br/>
+     That resonates
+     <br/>
+     with the soul
+    </h1>
+   </div>
+  </section>
+
+  <!-- Team -->
+  <section class="py-5 bg-gray-100">
+    <h2 class="text-4xl text-center font-semibold text-gray-900">Our Team</h2>
+    <div class="team-container">
+        <!-- Team Member 1 -->
+        <div class="team-member w-36 h-36">
+            <div class="team-member-inner">
+                <div class="team-member-front">
+                    <img alt="Kalyan Kumar, Vocalist" class="rounded-full w-36 h-36 object-cover" src="images/Kalyan-LeadSinger.jpg" loading="lazy"/>
+                </div>
+                <div class="team-member-back">
+                    <h3 class="text-xl font-semibold">Kalyan Kumar</h3>
+                    <p class="text-gray-400">Lead Singer</p>
+                </div>
+            </div>
+        </div>
+        <!-- Team Member 2 -->
+        <div class="team-member w-36 h-36">
+            <div class="team-member-inner">
+                <div class="team-member-front">
+                    <img alt="Rahul Karra, Guitarist" class="rounded-full w-36 h-36 object-cover" src="images/Vineeth-Keyboardist.png" loading="lazy" />
+                </div>
+                <div class="team-member-back">
+                    <h3 class="text-xl font-semibold">Vineeth</h3>
+                    <p class="text-gray-400">Keyboardist</p>
+                </div>
+            </div>
+        </div>
+        <!-- Team Member 3 -->
+        <div class="team-member w-36 h-36">
+            <div class="team-member-inner">
+                <div class="team-member-front">
+                    <img alt="John Doe, Drummer" class="rounded-full w-36 h-36 object-cover" src="images/Sathwik-drummer.png" loading="lazy" />
+                </div>
+                <div class="team-member-back">
+                    <h3 class="text-xl font-semibold">Sathwik</h3>
+                    <p class="text-gray-400">Drummer</p>
+                </div>
+            </div>
+        </div>
+        <!-- Team Member 4 -->
+        <div class="team-member w-36 h-36">
+            <div class="team-member-inner">
+                <div class="team-member-front">
+                    <img alt="Jane Smith, Bassist" class="rounded-full w-36 h-36 object-cover" src="images/Sathvik-Guitarist.jpg" loading="lazy" />
+                </div>
+                <div class="team-member-back">
+                    <h3 class="text-xl font-semibold">Sathvik</h3>
+                    <p class="text-gray-400">Guitarist</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  
+ <!-- Description -->
+<section class="py-16 bg-cover bg-center text-white" id="description" style="background-image: url('images/Vision_Mission.jpg');">
+    <div class="container mx-auto text-center">
+      <!-- About Us -->
+      <div class="p- mb-10 mt-[-70]">
+        <h2 class="text-4xl font-semibold text-black">About Us</h2>
+        <p class="mt-4 max-w-2xl mx-auto text-black text-lg">
+          Welcome to The Soul Captivators, a place where faith meets music and hearts are uplifted through the power of Christian melodies. We are a vibrant community dedicated to spreading the message of love, hope, and salvation through inspirational music that resonates with believers worldwide.
+        </p>
+      </div>
+      <!-- Vision and Mission -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+        <!-- Vision -->
+        <div class="text-center px-4">
+          <h3 class="text-4xl font-semibold text-black">Vision:</h3>
+          <p class="mt-4 text-black text-lg">
+            To be a global hub for Christian music enthusiasts, <br>inspiring faith, unity, and worship <br>while spreading the love of Christ to every corner of the world.
+          </p>
+        </div>
+        <!-- Mission -->
+        <div class="text-center px-4">
+          <h3 class="text-4xl font-semibold text-black">Mission:</h3>
+          <p class="mt-4 text-black text-lg">
+            To glorify God by providing a platform for sharing uplifting Christian music, <br>fostering spiritual growth, and bringing people closer to Christ <br>through the universal language of melody and harmony.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Videos -->
+<section class="py-16 bg-gray-100 text-white" id="videos">
+    <div class="container mx-auto text-center px-4">
+      <h1 class="text-2xl font-semibold">
+        Videos
+      </h1>
+      <a class="mt-4 inline-block py-2 px-4 bg-gray-900 text-white rounded hover:bg-gray-800" href="https://www.youtube.com/@thesoulcaptivators" target="_blank">
+        Watch Now
+        <i class="fas fa-arrow-right ml-2"></i>
+      </a>
+      <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Video Box 1 -->
+        <div class="box bg-white p-4 rounded-lg shadow-lg">
+          <iframe class="w-full h-48" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/gVnlbCPkoI8" title="YouTube video player"></iframe>
+          <h2 class="mt-4 text-lg font-semibold text-gray-900">
+            Video 1
+          </h2>
+        </div>
+        <!-- Video Box 2 -->
+        <div class="box bg-white p-4 rounded-lg shadow-lg">
+          <iframe class="w-full h-48" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/Z-GTJUrhNSg" title="YouTube video player"></iframe>
+          <h2 class="mt-4 text-lg font-semibold text-gray-900">
+            Video 2
+          </h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Lifestyle -->
+<section class="py-16 bg-cover bg-center text-white" id="lifestyle" style="background-image: url('/images/Lifestyle.jpg');">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold">Lifestyle</h2>
+      <div class="mt-8 flex justify-center items-center h-96">
+        <h3 class="gwendolyn-bold text-7xl tracking-widest">Coming Soon</h3>
+      </div>
+    </div>
+  </section>
+  
+    
+
+  <!-- Sponsorship -->
+  <section class="py-16 bg-gray-100 text-white" id="sponsorship">
+   <div class="container mx-auto text-center">
+    <h2 class="text-2xl font-semibold">
+     Sponsorship
+    </h2>
+    <h3 class="mt-4 text-lg text-gray-700 text-white">
+     Scan the below QR code for sponsorship or contact us
+    </h3>
+    <div class="mt-8 grid grid-cols-1 gap-8">
+     <div class="img1">
+      <img loading="lazy" alt="Sponsorship image" class="w-72 h-72 object-cover rounded-lg mx-auto" src="images/QR_PhonePe.jpg"/>
+     </div>
+     <div class="text-center">
+      <p class="text-gray-700 text-white">
+       We appreciate your support! <br> Your sponsorship helps us continue to create and share uplifting Christian music that inspires and connects people worldwide. <br> For more information on how you can support us, please contact us directly.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8">
+   <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="footer-box">
+     <a class="flex items-center text-xl font-semibold text-white" href="#">
+      <img loading="lazy" alt="Logo of The Soul Captivators" class="h-12 w-12 rounded-full mr-2" src="images/thesoulcaptivators.jpg"/>
+      The Soul Captivators
+     </a>
+     <p class="mt-4">
+      Hubballi, Karnataka,
+      <br/>
+      India
+     </p>
+
+    <div class="social flex space-x-3 mt-4">
+        <a class="p-4 bg-white rounded-full text-blue-600 text-xl transform transition-all hover:bg-transparent hover:text-blue-600 hover:scale-110" href="https://www.facebook.com">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a class="p-4 bg-white rounded-full text-pink-600 text-xl transform transition-all hover:bg-transparent hover:text-pink-600 hover:scale-110" href="https://www.instagram.com/thesoulcaptivators/?igsh=amdybWY1cjJxZmhu&amp%3Butm_source=qr">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a class="p-4 bg-white rounded-full text-blue-400 text-xl transform transition-all hover:bg-transparent hover:text-blue-400 hover:scale-110" href="https://www.x.com">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a class="p-4 bg-white rounded-full text-red-600 text-xl transform transition-all hover:bg-transparent hover:text-red-600 hover:scale-110" href="https://www.youtube.com/@thesoulcaptivators">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a class="p-4 bg-white rounded-full text-green-500 text-xl transform transition-all hover:bg-transparent hover:text-green-500 hover:scale-110" href="https://www.spotify.com">
+          <i class="fab fa-spotify"></i>
+        </a>
+        <a class="p-4 bg-white rounded-full text-gray-900 text-xl transform transition-all hover:bg-transparent hover:text-gray-900 hover:scale-110" href="https://www.applemusic.com">
+          <i class="fab fa-apple"></i>
+        </a>
+      </div>
+    </div>
+    
+    <div class="mr-32 footer-box">
+     <h2 class="text-xl font-semibold">
+      Newsletter
+     </h2>
+     <p class="mt-4">
+      Subscribe to latest updates!
+     </p>
+     <form action="" class="mt-4 flex items-center border-b border-gray-400">
+      <i class="fas fa-envelope text-gray-400">
+      </i>
+      <input class="bg-transparent border-none outline-none text-white placeholder-gray-400 ml-4 flex-1" placeholder="Enter Your Email" type="email"/>
+      <button class="text-gray-400 hover:text-white" type="submit">
+       <i class="fas fa-arrow-right">
+       </i>
+      </button>
+     </form>
+    </div>
+   </div>
+   <div class="mt-8 text-center text-gray-400">
+    <p>
+     © All rights are reserved to The Soul Captivators Team
+    </p>
+    <p>
+        Developed by Rahul Karra
+    </p>
+   </div>
+  </footer>
+  <script src="script.js"></script>
+ </body>
+</html>
+

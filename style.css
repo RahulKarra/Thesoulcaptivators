@@ -1,0 +1,969 @@
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Regular and Bold Gwendolyn Fonts */
+.gwendolyn-regular {
+font-family: "Gwendolyn", serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.gwendolyn-bold {
+font-family: "Gwendolyn", serif;
+font-weight: 700;
+font-style: normal;
+}
+
+
+.social a {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social a:hover {
+    transform: scale(1.1);
+}
+
+.social a:hover .fa-facebook-f {
+    color: #3b5998;
+}
+
+.social a:hover .fa-instagram {
+    color: #e4405f;
+}
+
+.social a:hover .fa-twitter {
+    color: #1da1f2;
+}
+
+.social a:hover .fa-youtube {
+    color: #ff0000;
+}
+
+.social a:hover .fa-spotify {
+    color: #1db954;
+}
+
+.social a:hover .fa-apple {
+    color: #a2aaad;
+}
+
+
+.navbar {
+    position: absolute;
+    top: -570px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-color);
+    box-shadow: 4px 4px 0px 4px rgb(213, 213, 213);
+    transition: top 0.3s ease;
+    text-align: left;
+}
+
+.navbar.active {
+    top: 100%;
+}
+
+#home {
+background-image: url('images/HeaderPage.jpg');
+background-size: cover;
+background-position: center;
+}
+
+#description {
+background-image: url('images/Vision_Mission.jpg');
+background-size: cover;
+background-position: center;
+}
+
+#videos {
+background-image: url('images/videos.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+#lifestyle {
+background-image: url('images/Lifestyle.jpg');
+background-size: cover;
+background-position: center;
+}
+
+#sponsorship {
+background-image: url('images/Sponsorship.jpg');
+background-size: cover;
+background-position: center;
+}
+
+#videos,
+#lifestyle,
+#sponsorship {
+color: white; /* Ensures all text in these sections is white */
+}
+
+#lifestyle h2,
+#lifestyle h3,
+#videos h1,
+#videos h2,
+#sponsorship h2,
+#sponsorship h3,
+#sponsorship p {
+color: white; /* Specifically targets headings and text in these sections */
+}
+
+
+/* Add this to make the height of these sections equal to the header section */
+#description, #lifestyle, #sponsorship, #videos {
+min-height: 100vh; 
+display: flex;
+align-items: center;
+justify-content: center; 
+}
+
+/* This is to maintain a good design when the content is small */
+#description img, #lifestyle img, #sponsorship img, #videos img {
+max-width: 100%; 
+object-fit: cover; 
+}
+
+/* General Styling for the Videos Section */
+#videos {
+padding-top: 1rem; 
+padding-bottom: 7rem;
+background-color: #f3f4f6;
+color: #fff; 
+}
+
+#videos .container {
+text-align: center;
+}
+
+/* Heading Styles */
+#videos h1 {
+font-size: 2rem;
+font-weight: 600;
+}
+
+/* Watch Now Button */
+#videos .mt-4 {
+margin-top: 1rem;
+display: inline-block;
+padding: 0.5rem 1rem;
+background-color: #000000; 
+color: #fff;
+border-radius: 0.375rem;
+text-decoration: none;
+}
+
+#videos .mt-4:hover {
+background-color: #f90000; 
+}
+
+#videos .fas {
+margin-left: 0.5rem;
+}
+
+/* Grid for Video Boxes */
+#videos .grid {
+margin-top: 2rem;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 4rem; 
+}
+
+/* Video Box Styling */
+#videos .box {
+background-color: #fff; 
+border-radius: 0.5rem;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+padding: 1rem; 
+padding-top: 2rem;
+overflow: hidden;
+position: relative;
+width: 500px;
+height: 300px; 
+margin: 0 auto; 
+}
+
+/* Video (iframe) Styling */
+#videos .box iframe {
+width: 100%; 
+height: 100%;
+object-fit: cover;
+border-radius: 0.375rem; 
+}
+
+/* Video Title Styling */
+#videos .box h2 {
+margin-top: 1rem;
+font-size: 1.125rem;
+font-weight: 600;
+color: #ffffff; 
+}
+
+
+/* Videos Section Heading */
+#videos h1 {
+margin-top: 2rem; 
+}
+
+/* Lifestyle Section Heading */
+#lifestyle h2 {
+margin-top: -3rem;
+}
+
+/* Sponsorship Section Headings */
+#sponsorship h2 {
+margin-top: 1rem; 
+}
+
+
+/* Navbar Styling */
+.navbar {
+    position: absolute;
+    top: -570px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: white; 
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); 
+    transition: top 0.3s ease;
+    text-align: left;
+}
+
+.navbar.active {
+    top: 100%;
+}
+
+.navbar a {
+    padding: 12px 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #f0f0f0; 
+    padding-left: 30px; 
+}
+
+/* Smooth transition for menu icon */
+#menu-icon i {
+    transition: transform 0.3s ease;
+}
+
+#menu-icon i.fa-times {
+    transform: rotate(180deg);
+}
+
+/* Dropdown Menu Styling */
+.navbar a.dropdown {
+position: relative;
+}
+
+/* The dropdown content */
+.navbar a.dropdown:hover .dropdown-menu {
+display: block; 
+}
+
+/* Add this to your existing navbar styles in style.css */
+.navbar a {
+    transition: all 0.3s ease; /* Add smooth transition */
+}
+
+.navbar a:hover {
+    background-color: #1f2937; /* Dark gray background on hover */
+    color: white; /* White text on hover */
+    padding-left: 30px; /* Existing padding */
+}
+
+
+.navbar .dropdown-menu {
+display: none;
+position: absolute;
+top: 100%;
+left: 0;
+background-color: white;
+min-width: 180px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
+z-index: 10;
+}
+
+/* Dropdown items */
+.navbar .dropdown-menu a {
+padding: 12px 20px;
+color: black; 
+text-decoration: none;
+font-size: 14px;
+border-bottom: 1px solid #ddd;
+}
+
+.navbar .dropdown-menu a:hover {
+background-color: #f0f0f0;
+padding-left: 30px;
+}
+
+/* Mobile Menu */
+.navbar a.mobile-menu-item {
+padding: 12px 20px;
+font-size: 18px;
+background-color: white; 
+color: black;
+transition: background-color 0.3s ease;
+}
+
+.navbar a.mobile-menu-item:hover {
+background-color: #f0f0f0; 
+}
+
+/* Ensure good spacing for the dropdown */
+.navbar .dropdown {
+padding-right: 20px;
+}
+
+
+/* Updated Flip Effect for Team Members */
+.team-member {
+perspective: 1000px; 
+}
+
+.team-member-inner {
+transition: transform 0.6s; 
+transform-style: preserve-3d; 
+position: relative;
+}
+
+.team-member:hover .team-member-inner {
+transform: rotateY(180deg); /* Rotate on hover */
+}
+
+.team-member-front,
+.team-member-back {
+backface-visibility: hidden;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.team-member-back {
+transform: rotateY(180deg); /* Rotate the back to align */
+background-color: rgba(0, 0, 0, 0.8); /* Background for the back side */
+}
+
+.team-member-back h3,
+.team-member-back p {
+color: black; /* Black text color on hover */
+}
+
+/* Center all team members in a row */
+.team-container {
+display: flex; 
+flex-wrap: wrap;
+justify-content: center;
+gap: 4rem; 
+padding: 2rem 0 0; 
+margin-top: 5rem; 
+}
+
+
+.gradient-text {
+background: linear-gradient(90deg, #ff2121, #ecfb64, #6cfd43);
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+}
+
+.fade-in {
+opacity: 0;
+animation: fadeIn 3s forwards;
+}
+
+@keyframes fadeIn {
+from { opacity: 0; }
+to { opacity: 1; }
+}
+
+
+
+@media (max-width: 640px) {
+    .lifestyle-box img {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+
+
+/* Base Responsive Setup */
+@media (max-width: 1024px) {
+/* Team Section Responsiveness */
+.team-container {
+gap: 2rem;
+padding: 1rem;
+margin-top: 5rem;
+}
+
+/* Description Section */
+#description .container {
+padding: 0 1rem;
+}
+
+#description .grid {
+gap: 4rem;
+}
+}
+
+@media (max-width: 768px) {
+/* Header and Navigation */
+header .container {
+padding: 0.75rem;
+}
+
+/* Home Section */
+#home .gradient-text {
+font-size: 1.5rem;
+}
+
+#home h1.gradient-text {
+font-size: 2.5rem;
+}
+
+/* Description Section */
+#description {
+padding: 4rem 1rem;
+}
+
+#description p {
+font-size: 1rem;
+padding: 0 1rem;
+}
+
+/* Videos Section */
+#videos .grid {
+grid-template-columns: 1fr;
+}
+
+#videos .box {
+width: 100%;
+height: 250px;
+margin: 0;
+}
+
+/* Footer */
+footer .container {
+padding: 2rem 1rem;
+}
+
+.social {
+justify-content: center;
+flex-wrap: wrap;
+}
+}
+
+@media (max-width: 640px) {
+/* Header */
+header .container img {
+height: 2.5rem;
+width: 2.5rem;
+}
+
+/* Team Section */
+.team-container {
+gap: 3rem;
+}
+
+.team-member {
+width: 120px;
+height: 120px;
+}
+
+/* Description Section */
+#description .grid {
+grid-template-columns: 1fr;
+}
+
+/* Videos Section */
+#videos .box {
+height: 200px;
+}
+
+/* Lifestyle Section */
+#lifestyle h3.gwendolyn-bold {
+font-size: 3rem;
+}
+
+/* Sponsorship Section */
+#sponsorship img {
+width: 200px;
+height: 200px;
+}
+}
+
+/* Fix for Mobile Navigation */
+@media (max-width: 768px) {
+.navbar {
+width: 100%;
+background: white;
+border-radius: 0;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active {
+display: flex;
+top: 100%;
+}
+}
+
+
+/* ------------------------------------------------------------- */
+/* Updated Footer Social Media Styling */
+.social {
+display: flex;
+flex-wrap: wrap;
+gap: 1rem;
+margin-top: 1.5rem;
+margin-bottom: 1.5rem;
+}
+
+.social a {
+width: 3rem;
+height: 3rem;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+background: white;
+transition: all 0.3s ease;
+}
+
+/* Add this to your footer styles in style.css */
+.footer-box {
+    padding-right: 2rem; /* Add right padding */
+}
+
+/* Specifically target the first footer box with the logo and address */
+.footer-box:first-child {
+    margin-left: 2rem; /* Add left margin to move content right */
+}
+
+
+/* Responsive Footer Adjustments */
+@media (max-width: 768px) {
+    .footer-box {
+        padding-right: 0.5rem;
+    }
+    
+    .footer-box:first-child {
+        margin-left: 0rem;
+    }
+
+  .social {
+  justify-content: flex-start;
+  gap: 0.75rem;
+  margin-left: -0.25rem;
+  }
+
+  .social a {
+  width: 2.75rem;
+  height: 2.75rem;
+  }
+}
+
+@media (max-width: 640px) {
+footer .container {
+grid-template-columns: 1fr;
+}
+
+.footer-box {
+text-align: center;
+justify-content: center;
+}
+
+.social {
+justify-content: center;
+gap: 0.5rem;
+margin-left: 0;
+}
+
+.social a {
+width: 2.5rem;
+height: 2.5rem;
+}
+
+footer .mr-32 {
+margin-right: 0;
+padding: 0 1rem;
+}
+}
+
+
+/* Footer Mobile Alignment Fix */
+@media (max-width: 768px) {
+footer .container {
+margin-left: 0;
+margin-right: 0;
+padding-left: 0;
+padding-right: 0;
+width: 100%;
+}
+
+footer .container .ml-8 {
+margin-left: 0;
+}
+
+.footer-box {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+padding: 0 1rem;
+width: 100%;
+}
+
+.social {
+display: flex;
+justify-content: center;
+gap: 1rem;
+width: 100%;
+padding: 0 1rem;
+}
+
+footer form {
+width: 100%;
+max-width: 300px;
+margin: 0 auto;
+}
+
+footer .text-center {
+padding: 0 1rem;
+}
+}
+
+/* Additional fix for extra small screens */
+@media (max-width: 390px) {
+footer .container {
+padding: 0;
+}
+
+.footer-box{
+    margin-right: 0.5rem;
+}
+
+.social {
+    gap: 0.75rem;
+    }
+
+
+}
+
+
+@media screen and (max-width: 480px) {
+    /* Header/Navbar Mobile Adjustments */
+    header .container {
+      padding: 0.5rem 1rem;
+    }
+  
+    header .text-xl {
+      font-size: 1.125rem; /* Smaller logo text */
+    }
+  
+    header img.h-12 {
+      height: 2rem;
+      width: 2rem;
+    }
+  
+    /* Home Section Mobile Adjustments */
+    #home .gradient-text {
+      font-size: 1.25rem !important; /* Smaller subtitle */
+    }
+  
+    #home h1.gradient-text {
+      font-size: 2rem !important; /* Smaller main title */
+      line-height: 1.2;
+    }
+  
+    /* Team Section Mobile Adjustments */
+    .team-container {
+      gap: 1.5rem;
+      padding: 1rem 0.5rem;
+      margin-top: 3rem;
+    }
+  
+    .team-member {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .team-member img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .team-member-back h3 {
+      font-size: 0.875rem;
+    }
+  
+    .team-member-back p {
+      font-size: 0.75rem;
+    }
+  
+    /* Description Section Mobile Adjustments */
+    #description {
+      padding: 2rem 1rem;
+    }
+  
+    #description h2 {
+      font-size: 1.75rem;
+    }
+  
+    #description p {
+      font-size: 0.875rem;
+      line-height: 1.4;
+    }
+  
+    #description .grid {
+      gap: 2rem;
+    }
+  
+    /* Videos Section Mobile Adjustments */
+    #videos {
+      padding: 2rem 1rem;
+    }
+  
+    #videos h1 {
+      font-size: 1.75rem;
+    }
+  
+    #videos .box {
+      width: 100%;
+      height: 200px;
+      margin: 0.5rem 0;
+    }
+  
+    #videos iframe {
+      height: 180px;
+    }
+  
+    /* Lifestyle Section Mobile Adjustments */
+    #lifestyle h2 {
+      font-size: 1.75rem;
+    }
+  
+    #lifestyle h3.gwendolyn-bold {
+      font-size: 2.5rem;
+    }
+  
+    /* Sponsorship Section Mobile Adjustments */
+    #sponsorship h2 {
+      font-size: 1.75rem;
+    }
+  
+    #sponsorship img {
+      width: 200px;
+      height: 200px;
+    }
+  
+    #sponsorship p {
+      font-size: 0.875rem;
+      padding: 0 1rem;
+    }
+  
+    /* Footer Mobile Adjustments */
+    footer {
+    margin: auto;
+      padding: 2rem 1rem;
+    }
+  
+    footer .text-xl {
+      font-size: 1.125rem;
+    }
+  
+    footer img.h-12 {
+      height: 2rem;
+      width: 2rem;
+    }
+  
+    footer p {
+      font-size: 0.875rem;
+    }
+  
+    .social {
+      gap: 0.5rem;
+    }
+  
+    .social a {
+      padding: 0.5rem;
+      width: 2rem;
+      height: 2rem;
+    }
+  
+    .social i {
+      font-size: 1rem;
+    }
+  
+    footer input {
+      font-size: 0.875rem;
+    }
+  
+    /* Mobile Navigation Menu Adjustments */
+    .navbar {
+      padding: 0.5rem 0;
+    }
+  
+    .navbar a {
+      font-size: 0.875rem;
+      padding: 0.75rem 1rem;
+    }
+  
+    /* Back to Top Button Mobile Adjustment */
+    .back-to-top {
+      width: 30px;
+      height: 30px;
+      bottom: 10px;
+      right: 10px;
+    }
+  
+    .back-to-top i {
+      font-size: 0.875rem;
+    }
+  }
+  
+  /* Additional fixes for very small screens */
+  @media screen and (max-width: 320px) {
+    #home h1.gradient-text {
+      font-size: 1.75rem !important;
+    }
+  
+    .team-member {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .team-member img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    #videos .box {
+      height: 160px;
+    }
+  
+    #videos iframe {
+      height: 140px;
+    }
+  
+    #sponsorship img {
+      width: 160px;
+      height: 160px;
+    }
+  }
+
+
+
+  /* Add at the end of style.css */
+
+@media screen and (max-width: 480px) {
+    #description {
+      position: relative;  /* Ensure relative positioning for absolute child */
+    }
+    
+    #description h2:first-of-type {
+      position: relative;  /* Allow positioning */
+      top: 120px;         /* Push heading down into background */
+      margin-bottom: 170px; /* Prevent content overlap */
+      text-align: center;
+      width: 100%;
+      z-index: 2;         /* Ensure heading stays above background */
+    }
+  }
+
+  /* Add at the end of style.css */
+
+@media screen and (max-width: 260px) {
+    /* Prevent horizontal overflow */
+    html, body {
+      max-width: 100%;
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Ensure all content respects viewport width */
+    * {
+      max-width: 100vw;
+      box-sizing: border-box;
+    }
+  }
+
+
+
+.team-member-inner {
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Smooth scroll reveal animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Add to style.css */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 99;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .back-to-top {
+        bottom: 15px;
+        right: 15px;
+        width: 35px;
+        height: 35px;
+    }
+}
